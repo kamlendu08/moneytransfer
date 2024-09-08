@@ -20,7 +20,7 @@ const SignUpPage = () => {
         console.log({ user });
 
         try {
-            const res = await axios.post("http://localhost:3000/api/v1/user/signup", {
+            const res = await axios.post("https://moneytransfer-3cee.onrender.com/api/v1/user/signup", {
                 username: user.username,
                 password: user.password,
                 firstName: user.firstName,
