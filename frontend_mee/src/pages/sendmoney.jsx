@@ -22,7 +22,7 @@ const SendMoney = () => {
             let config = {
                 method: 'post',
                 maxBodyLength: Infinity,
-                url: 'http://localhost:3000/api/v1/account/transfer',
+                url: 'https://moneytransfer-3cee.onrender.com/api/v1/account/transfer',
                 headers: {
                     'authorization': temp,
                     'Content-Type': 'application/json'
