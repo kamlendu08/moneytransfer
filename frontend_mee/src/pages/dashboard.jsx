@@ -15,7 +15,7 @@ const Dashboard = () => {
     const balance = useRecoilValue(balanceState);
     const findall = async () => {
         try {
-            const res = await axios.get('http://localhost:3000/api/v1/user/bulk', {
+            const res = await axios.get('https://moneytransfer-3cee.onrender.com/api/v1/user/bulk', {
                 params: {
                     filter: tofind
                 }
