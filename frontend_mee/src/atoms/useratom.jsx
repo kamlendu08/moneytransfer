@@ -26,7 +26,7 @@ const balanceState = selector({
         try{
             const temp = "Bearer" +" " + localStorage.getItem('token');
             console.log(temp)
-            const res = await axios.get('http://localhost:3000/api/v1/account/balance',{
+            const res = await axios.get('https://moneytransfer-3cee.onrender.com/api/v1/account/balance',{
                 headers: {
                     authorization : temp
                 }
